@@ -46,6 +46,7 @@ class QRScannerScreen extends StatelessWidget {
             right: 20,
             child: FloatingActionButton(
               backgroundColor: Colors.blue,
+              foregroundColor: Colors.white,
               onPressed: () => Get.offAllNamed(AppRoutes.join),
               child: Icon(Icons.home),
             ),

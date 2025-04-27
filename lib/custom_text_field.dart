@@ -13,17 +13,17 @@
 //   @override
 //   Widget build(BuildContext context) {
 //     return TextField(
-//       decoration: InputDecoration(
-//         prefixIcon: Icon(icon, color: const Color(0xFF2563EB)),
-//         hintText: hintText,
-//         filled: true,
-//         fillColor: const Color(0xFFF1F5F9),
-//         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-//         border: OutlineInputBorder(
-//           borderRadius: BorderRadius.circular(12),
-//           borderSide: BorderSide.none,
-//         ),
-//       ),
+      // decoration: InputDecoration(
+      //   prefixIcon: Icon(icon, color: const Color(0xFF2563EB)),
+      //   hintText: hintText,
+      //   filled: true,
+      //   fillColor: const Color(0xFFF1F5F9),
+      //   contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      //   border: OutlineInputBorder(
+      //     borderRadius: BorderRadius.circular(12),
+      //     borderSide: BorderSide.none,
+      //   ),
+      // ),
 //     );
 //   }
 // }
@@ -48,10 +48,21 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       keyboardType: keyboardType,
-      decoration: InputDecoration(
+      // decoration: InputDecoration(
+      //   labelText: labelText,
+      //   prefixIcon: Icon(icon),
+      //   border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+      // ),
+       decoration: InputDecoration(
+        prefixIcon: Icon(icon, color: const Color(0xFF2563EB)),
         labelText: labelText,
-        prefixIcon: Icon(icon),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+        filled: true,
+        fillColor: const Color(0xFFF1F5F9),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+         
+        ),
       ),
     );
   }
